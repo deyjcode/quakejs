@@ -20,6 +20,9 @@ docker run -d --name quakejs -e SERVER=<SERVER_NAME_OR_IP> -e HTTP_PORT=<HTTP_PO
 docker run -d --name deyjcodequakejs -e SERVER=stevequakejs.ddns.net -e HTTP_PORT=8080 -p 8080:80 -p 27960:27960 deyjcode/quakejs:1.0
 ```
 
+#### Push
+docker push deyjcode/quakejs:tagnumber
+
 #### server.cfg:
 Refer to [quake3world](https://www.quake3world.com/q3guide/servers.html) for instructions on its usage.
 
