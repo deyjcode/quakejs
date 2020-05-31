@@ -1,4 +1,5 @@
-# quakejs-docker
+# QuakeJS Docker Image
+![Build and Push Docker Image](https://github.com/deyjcode/quakejs/workflows/Build%20and%20Push%20Docker%20Image/badge.svg)
 
 ### A fully local and Dockerized quakejs server. Independent, unadulterated, and free from the middleman.
 
@@ -11,7 +12,7 @@ docker pull deyjcode/quakejs:latest
 #### and run it:
 
 ```
-docker run -d --name quakejs -e SERVER=<SERVER_NAME_OR_IP> -e HTTP_PORT=<HTTP_PORT> -p <HTTP_PORT>:80 -p 27960:27960 treyyoder/quakejs:latest
+docker run -d --name quakejs -e SERVER=<SERVER_NAME_OR_IP> -e HTTP_PORT=<HTTP_PORT> -p <HTTP_PORT>:80 -p 27960:27960 deyjcode/quakejs:latest
 ```
 
 #### Example:
@@ -41,4 +42,4 @@ services:
         image: 'deyjcode/quakejs:latest'
 ```
 
-Forked from https://github.com/treyyoder/quakejs-docker
+Originally forked from https://github.com/treyyoder/quakejs-docker
