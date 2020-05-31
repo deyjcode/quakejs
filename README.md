@@ -15,7 +15,7 @@ docker pull deyjcode/quakejs:latest
 docker run -d --name quakejs -e SERVER=<SERVER_NAME_OR_IP> -e HTTP_PORT=<HTTP_PORT> -p <HTTP_PORT>:80 -p 27960:27960 deyjcode/quakejs:latest
 ```
 
-#### Example:
+#### Example running on CLI:
 
 ```
 docker run -d --name deyjcodequakejs -e SERVER=stevequakejs.ddns.net -e HTTP_PORT=8080 -p 8080:80 -p 27960:27960 deyjcode/quakejs:1.0
